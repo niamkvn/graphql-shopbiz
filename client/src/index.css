@@ -1,0 +1,49 @@
+:root {
+    --blueberry: #687a8f;
+    --green: #42b549;
+    --grape: #7f688f;
+    --orange: #f59a23;
+    --line-light-grey: 1px solid #e0e0e0;
+    --dark: #606060;
+    --white: #fff;
+    --shadow-banner: 4px 5px 10px rgb(132, 145, 151);
+    --shadow-card: 0 2px 4px 0 rgba(0, 0, 0, .12);
+    --shadow-card-trans: 0 2px 4px 2px rgba(0, 0, 0, .16);
+    --padding-btn: 0.6rem 1.3rem;
+}
+
+.products .list-item {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.products .list-item .item {
+    color: var(--dark);
+    transition: 0.4s;
+    box-shadow: var(--shadow-card);
+    background: var(--skin);
+}
+.products .list-item .item .item-img {
+    height: 200px;
+}
+
+.products .list-item .item .item-img img {
+    max-width: 100%;
+}
+
+.products .list-item .item .descript {
+    padding: 0 10px;
+    height: 400px;
+}
+
+.products .list-item .item p {
+    float: right;
+    font-size: 20px;
+}
+
+.products .list-item .item:hover {
+    border: 0;
+    color: var(--orange);
+    box-shadow: var(--shadow-card-trans);
+}
